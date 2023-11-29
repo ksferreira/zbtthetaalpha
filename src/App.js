@@ -1,24 +1,41 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Rush from './pages/Rush';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import { ThemeProvider } from '@emotion/react';
+import theme from './styles/theme';
+import { CssBaseline } from '@mui/material';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+    <ParallaxProvider> 
+    
+      <header>
+        <Header/>
       </header>
-    </div>
+      <main>
+
+        <Routes>
+          <Route path='/'>
+            <Route index element={<Home />}/>
+            <Route path="home" element={<Home />} />
+            <Route path="rush" element={<Rush />}/>
+          </Route>
+        </Routes>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+
+      </ParallaxProvider>
+    </ThemeProvider>
   );
 }
 
