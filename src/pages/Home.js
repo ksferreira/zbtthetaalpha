@@ -4,8 +4,7 @@ import { CONSTANTS } from '../styles/constants';
 import zbtcropped from '../images/zbtcropped.jpeg';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import HistoryCard from '../components/HistoryCard';
-import EBoardCard from '../components/EBoardCard/EBoardCard';
-
+import EBoardCard from '../components/EBoardCard/EBoardCard2';
 
 const Home = () => {
 	return (
@@ -29,36 +28,49 @@ const Home = () => {
 						},
 					]}
 					style={{
-						height: '400px',
+						height: '50vh',
 					}}
-				/>
-        <Box sx={{
-          boxShadow: 1
-        }}>
-          <Typography variant='h1' sx={{
-          }}>
-            ZETA BETA TAU
-          </Typography>
+				>
+					<Box sx={{
+						zIndex: 'app bar'
+					}}>
+						<Typography variant='h1'>Test</Typography>
+					</Box>
 
-          <Typography variant='subtitle1' sx={{
-            borderBottom: 1,
-            borderColor: CONSTANTS.ZBT_GOLD,
-            display: 'block'
-          }}>
-            ΘA Chapter - University of Massachusetts Amherst
-          </Typography>
-        </Box>
+				</ParallaxBanner>
 
-        <Box sx={{
-          bgcolor: CONSTANTS.ZBT_BACKGROUND
-        }}>
-          <Container>
-            <HistoryCard />
-          </Container>
-		  <Container>
-		  	<EBoardCard />
-		  </Container>
-        </Box>
+				<Box
+					sx={{
+						textAlign: 'center',
+					}}
+				>
+					<Typography
+						variant='h6'
+						sx={{
+							color: 'transparent',
+							textShadow: '0 0 0 white',
+						}}
+					>
+						⚜️POWERHOUSE OF EXCELLENCE⚜️
+					</Typography>
+				</Box>
+
+				<Box
+					sx={{
+						bgcolor: CONSTANTS.ZBT_BACKGROUND,
+					}}
+				>
+					<Container
+						sx={{
+							display: 'flex',
+							flexDirection: 'column',
+							gap: 4,
+						}}
+					>
+						<HistoryCard />
+						<EBoardCard />
+					</Container>
+				</Box>
 			</Box>
 		</React.Fragment>
 	);
