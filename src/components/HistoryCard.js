@@ -17,6 +17,7 @@ const HistoryCard = () => {
             backgroundColor: CONSTANTS.ZBT_DARK_NAVY,
             boxShadow: `${CONSTANTS.ZBT_DARK_NAVY} 0px 0px 0px 8px`,
             display: 'flex',
+            flexDirection: 'row',
             justifyContent: 'space-between',
         }}>
             <Card variant="outlined" sx={{ display: 'flex', width: '-webkit-fill-available'}}>
