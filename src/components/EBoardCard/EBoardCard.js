@@ -92,61 +92,61 @@ const EBoardCard = () => {
 				boxShadow: `${CONSTANTS.ZBT_DARK_NAVY} 0px 0px 0px 8px`,
 				display: 'flex',
 				justifyContent: 'space-between',
-				height: 'auto'
 			}}
 		>
 			<Card
 				variant='outlined'
-				sx={{ display: 'flex', width: '100x' }}
+				sx={{ display: 'flex', width: '-webkit-fill-available' }}
 			>
 				<Box
 					sx={{
-						display: 'flex',
-						flexDirection: 'row',
-						padding: '8px',
+						display: 'flex', flexDirection: 'row', flexGrow: 5, width: '60%', padding: '8px'
 					}}
 				>
-					<CardContent>
-						<AutoPlaySwipeableViews
-						axis='x'
-						interval='3000'
-						index={activeStep}
-						onChangeIndex={handleStepChange}
-						style={{width: '500px'}}
-						enableMouseEvents
-						>
-							{images.map((brother, index) => {
-								return (
-									<React.Fragment>
-										<Box
-											component='img'
-											sx={{
-												height: 'auto',
-												display: 'block',
-												marginLeft: 'auto',
-												marginRight: 'auto',
-												overflow: 'hidden',
-												width: '50%',
-												objectFit: 'cover'
-											}}
-											src={brother.imgPath}
-											alt={`Brother ${brother.name}, ${brother.position}`}
-										/>
-										<Typography variant='h2'>
-												{brother.name}
-										</Typography>
-										<Typography variant='subtitle1'>
-											{brother.position}
-										</Typography>
-									</React.Fragment>
-							)})}
-						</AutoPlaySwipeableViews>
-						
+					<CardContent sx={{ height: '400px',	}}>
+						<Box sx={{ position: 'absolute', display: 'flex', flexDirection: 'row', flexGrow: 5, width: '50%', padding: '8px' }}>
+
+							<AutoPlaySwipeableViews
+							axis='x'
+							interval='1000000'
+							index={activeStep}
+							onChangeIndex={handleStepChange}
+							enableMouseEvents
+							>
+								{images.map((brother, index) => {
+									return (
+										<Box sx={{
+											display: 'flex',
+											flexDirection: 'row',
+										}}>
+											<Box
+												component='img'
+												sx={{
+													height: '100px',
+													position: 'absolute',
+													display: 'block',
+													// marginLeft: 'auto',
+													// marginRight: 'auto',
+													// overflow: 'hidden',
+													// width: '50%',
+													// objectFit: 'cover',
+												}}
+												src={brother.imgPath}
+												alt={`Brother ${brother.name}, ${brother.position}`}
+												/>
+											<Typography variant='h2'>
+													{brother.name}
+											</Typography>
+											<Typography variant='subtitle1'>
+												{brother.position}
+											</Typography>
+										</Box>
+								)})}
+							</AutoPlaySwipeableViews>
+						</Box>
 					</CardContent>
 					{/* <CardContent> */}
-						<Typography variant="h1">
-											OUR E BOARD
-						</Typography>
+						
 					{/* </CardContent> */}
 				</Box>
 			</Card>
