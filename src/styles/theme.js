@@ -17,7 +17,7 @@ let theme = createTheme({
             contrastText: "#000"
         },
         background: {
-            default: CONSTANTS.ZBT_DARK_NAVY
+            default: CONSTANTS.ZBT_NAVYONE
         },
     },
     typography: {

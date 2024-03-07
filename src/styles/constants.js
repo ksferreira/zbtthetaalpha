@@ -8,4 +8,5 @@ export const CONSTANTS = {
     ZBT_PLAIN_NABY: "#2a4261", // 42, 66, 97
     ZBT_TEXT_GRAY: "#2f2f2f", // 47, 47, 47
     ZBT_BACKGROUND: "#cbc8c3", // 203, 200, 195
+    ZBT_NAVYONE: "#08273f", // 8, 39, 63
 };

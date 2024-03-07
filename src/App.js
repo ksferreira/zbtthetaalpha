@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Rush from './pages/Rush';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { ThemeProvider } from '@emotion/react';
@@ -18,7 +18,7 @@ function App() {
     <ParallaxProvider> 
     
       <header>
-        <Header/>
+        {/* <Header/> */}
       </header>
       <main>
 
