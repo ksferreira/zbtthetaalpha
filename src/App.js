@@ -3,8 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Rush from './pages/Rush';
+import Home from './components/Home';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { ThemeProvider } from '@emotion/react';
 import theme from './styles/theme';
@@ -26,7 +25,6 @@ function App() {
           <Route path='/'>
             <Route index element={<Home />}/>
             <Route path="home" element={<Home />} />
-            <Route path="rush" element={<Rush />}/>
           </Route>
         </Routes>
       </main>

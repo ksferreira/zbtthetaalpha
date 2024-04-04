@@ -3,6 +3,7 @@ export const CONSTANTS = {
     ZBT_DEEP_NAVY: "#0c2436", // 15, 33, 46
     ZBT_NAVY: "#183151", // 23, 45, 70
     ZBT_GOLD: "#ffc538", // 255, 186, 72
+    ZBT_GOLD_SECONDARY: "ba932e",
     ZBT_BABY_BLUE: "#9eb9ca", // 158, 185, 202
     ZBT_LIGHT_NAVY: "#1e3f57", // 30, 63, 87
     ZBT_PLAIN_NABY: "#2a4261", // 42, 66, 97

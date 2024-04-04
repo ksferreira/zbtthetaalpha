@@ -19,13 +19,13 @@ let theme = createTheme({
         background: {
             default: CONSTANTS.ZBT_NAVYONE
         },
+        
     },
     typography: {
         allVariants: {
             fontFamily: "EB Garamond Variable, sans-serif",
             color: "#fff",
         },
-        
     },
     components: {
         MuiCard: {
@@ -53,6 +53,12 @@ let theme = createTheme({
                 }
             }
         }
-    }
+    },
+    // tab: {
+    //     background: CONSTANTS.ZBT_NAVY,
+    //     '&.Mui-selected': {
+    //         color: CONSTANTS.ZBT_BABY_BLUE
+    //     }
+    // }
 }); 
 export default theme = responsiveFontSizes(theme);
