@@ -26,7 +26,7 @@ const Column = styled("div")({
   flexDirection: "column",
 });
 
-const Fundraiser = () => {
+const Soon = () => {
   return (
     <Container
       sx={{
@@ -82,7 +82,7 @@ const Fundraiser = () => {
                         borderBottom: "solid white 1px",
                         textAlign: "center"
                     }}>
-                        A Partnership!
+                        A Work 
                     </Typography>
                     <Typography sx={{
                         fontSize: "24px",
@@ -102,7 +102,7 @@ const Fundraiser = () => {
         </Box>
       </PageContainer>
     </Container>
-  );
-};
+  )
+}
 
-export default Fundraiser;
+export default Soon

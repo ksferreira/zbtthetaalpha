@@ -17,6 +17,7 @@ import Tab from "@mui/material/Tab";
 import About from "./Tabs/About";
 import Fundraiser from "./Tabs/Fundraiser";
 import Recruitment from "./Tabs/Recruitment";
+import Soon from "./Tabs/Soon";
 
 const a11yProps = (index) => {
   return {
@@ -90,8 +91,8 @@ const Item = (props) => {
 
       <ImgCard>
         <Img src={props.src} />
-        <Card>
-          <Typography
+        {/* <Card> */}
+          {/* <Typography
             sx={{
               borderColor: CONSTANTS.ZBT_GOLD,
               borderBottom: `thick double ${CONSTANTS.ZBT_GOLD}`,
@@ -106,8 +107,8 @@ const Item = (props) => {
             }}
           >
             {props.description}
-          </Typography>
-        </Card>
+          </Typography> */}
+        {/* </Card> */}
       </ImgCard>
     </React.Fragment>
   );
@@ -167,8 +168,8 @@ const Home = () => {
               <StyledTab label="About Us" {...a11yProps(0)} />
               <StyledTab label="Recruitment" {...a11yProps(1)} />
               <StyledTab label="Philanthropy" {...a11yProps(2)} />
-              <StyledTab label="Fundraiser" {...a11yProps(3)} />
-              <StyledTab label="Newsletter" {...a11yProps(4)} />
+              {/* <StyledTab label="Fundraiser" {...a11yProps(3)} /> */}
+              {/* <StyledTab label="Newsletter" {...a11yProps(4)} /> */}
             </Tabs>
           </Box>
 
@@ -182,8 +183,16 @@ const Home = () => {
             <Recruitment />
           </CustomTabPanel>
 
+          <CustomTabPanel value={tabIndex} index={2}>
+            <Soon />
+          </CustomTabPanel>
+
           <CustomTabPanel value={tabIndex} index={3}>
             <Fundraiser />
+          </CustomTabPanel>
+
+          <CustomTabPanel value={tabIndex} index={4}>
+            <Soon />
           </CustomTabPanel>
 
           <Box

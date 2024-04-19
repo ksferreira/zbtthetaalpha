@@ -26,13 +26,13 @@ export const BANNER_IMAGES = [
 		src: grads2022,
 		alt: 'The brothers part of the 2022 graduating class.',
 		title: '2022 GRADUATING CLASS!',
-		description: '',
+		description: 'Our alumni have come far since their journey into UMass and we wish them well in their upcoming careers and future academic endeavours!',
 	},
 	{
 		src: shabbat,
 		alt: 'Aiding the local Hillel House during Shabbat.',
 		title: 'LOCAL CONNECTION',
-		description: '',
+		description: 'W',
 	}
 ];
 
